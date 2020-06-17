@@ -1,0 +1,56 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended", // 使用来自 @eslint-plugin-react 的推荐规则
+		"plugin:@typescript-eslint/eslint-recommended", // 使用来自@typescript-eslint/eslint-plugin的推荐规则
+		"plugin:@typescript-eslint/recommended"
+	],
+	"rules": {
+		"react/jsx-filename-extension": [0],
+		"jsx-quotes": [
+			1,
+			"prefer-double"
+		],
+		"react/sort-comp": 0,
+		"@typescript-eslint/no-use-before-define": 0,
+		"@typescript-eslint/explicit-function-return-type": 0,
+		"import/no-mutable-exports": 0,
+		"react/jsx-uses-react": 1,
+		"react/prop-types": 0,
+		"@typescript-eslint/member-delimiter-style": 0,
+		"@typescript-eslint/camelcase": 0,
+		"@typescript-eslint/no-empty-interface": 0,
+		"no-debugger": 0,
+		"require-atomic-updates": 0,
+		"@typescript-eslint/interface-name-prefix": 0,
+		"no-prototype-builtins": 0,
+		"react/display-name": 0,
+		"@typescript-eslint/no-explicit-any": 0
+	},
+	"settings": {
+		"react": {
+			"version": "16.2.0" // React version. "detect" automatically picks the version you have installed.
+		}
+	},
+	"parser": "@typescript-eslint/parser", // 指定ESLint解析器
+	"env": {
+		"browser": true,
+		"commonjs": true,
+		"es6": true,
+		"node": true
+	},
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"sourceType": "module",
+		"useJSXTextNode": true,
+		"project": "./tsconfig.json"
+	},
+	"plugins": [
+		"@typescript-eslint"
+	],
+	"globals": {
+		"require": true
+	}
+}
