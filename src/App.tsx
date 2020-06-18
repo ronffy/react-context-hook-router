@@ -2,41 +2,33 @@
  * @description 
  * @author ronffy
  * @Date 2020-06-04 17:53:23
- * @LastEditTime 2020-06-17 17:17:18
+ * @LastEditTime 2020-06-18 17:37:31
  * @LastEditors ronffy
  */
 import React from 'react';
+import { useContext } from 'react';
+import AppContext from 'AppContext';
 import './App.css';
 
-class App extends React.Component {
-  state = {
-    hasError: false,
+const App = ({
+  children
+}) => {
+  const { routing, history} = useContext(AppContext);
+  console.log('app', routing.location);
+  
+  const handleClick = () => {
+    history.push('home')
   }
 
-  static getDerivedStateFromError() {
-    // 更新 state 使下一次渲染能够显示降级后的 UI
-    return {
-      hasError: true
-    }
-  }
-
-  componentDidCatch(e) {
-    console.log('app-componentDidCatch', e);
-  }
-
-  render() {
-    const { hasError } = this.state;
-
-    if (hasError) {
-      return null;
-    }
-    
-    return (
-      <div>
-        start
-      </div>
-    )
-  }
+  return (
+    <div>
+      <div onClick={handleClick}>跳转到首页</div>
+      {
+        children
+      }
+    </div>
+  )
 }
+
 
 export default App;

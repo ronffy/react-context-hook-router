@@ -1,3 +1,10 @@
+/**
+ * @description 
+ * @author ronffy
+ * @Date 2020-06-09 15:00:58
+ * @LastEditTime 2020-06-18 17:38:48
+ * @LastEditors ronffy
+ */
 /// <reference types="node" />
 /// <reference types="react" />
 /// <reference types="react-dom" />
@@ -66,7 +73,6 @@ declare module '*.module.sass' {
 }
 
 interface Window {
-  _r: any
-  b: any
-  c: any
+  __state: any
+  __routing: any
 }
