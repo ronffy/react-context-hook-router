@@ -2,13 +2,12 @@
  * @description 
  * @author ronffy
  * @Date 2020-06-10 17:15:18
- * @LastEditTime 2020-06-18 10:13:20
+ * @LastEditTime 2020-06-22 10:39:02
  * @LastEditors ronffy
  */
-const PROJECT_NAME = 'fly-sky-h5';
+import { PROJECT_NAME } from './variable';
 const prefix = PROJECT_NAME;
 
 export {
-  PROJECT_NAME,
   prefix
 }
