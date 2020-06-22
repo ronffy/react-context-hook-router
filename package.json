@@ -1,5 +1,5 @@
 {
-  "name": "r4",
+  "name": "react-context-hook-router",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -152,7 +152,6 @@
     "@babel/preset-env": "^7.10.2",
     "@types/react-router": "^5.1.7",
     "@types/react-router-dom": "^5.1.5",
-    "cross-env": "^7.0.2",
-    "upload-file-webpack-plugin": "^0.3.6"
+    "cross-env": "^7.0.2"
   }
 }

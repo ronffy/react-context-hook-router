@@ -11,6 +11,9 @@
 # production
 /build
 
+# lock
+*.lock
+
 # misc
 .DS_Store
 .env.local

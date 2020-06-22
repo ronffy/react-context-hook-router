@@ -2,7 +2,7 @@
  * @description 
  * @author ronffy
  * @Date 2020-06-04 17:53:23
- * @LastEditTime 2020-06-18 19:46:47
+ * @LastEditTime 2020-06-22 10:50:07
  * @LastEditors ronffy
  */
 import React from 'react';
@@ -11,8 +11,8 @@ import Routers from './Routers';
 import * as serviceWorker from './serviceWorker';
 import storage from './utils/storage';
 import { prefix } from './config';
-import './index.css';
 import { BrowserRouter } from 'react-router-dom';
+import './index.css';
 
 storage.register(prefix);
 
