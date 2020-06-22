@@ -1,5 +1,5 @@
 {
-  "name": "react-context-hook-router",
+  "name": "react-context-hooks-router",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -153,5 +153,15 @@
     "@types/react-router": "^5.1.7",
     "@types/react-router-dom": "^5.1.5",
     "cross-env": "^7.0.2"
-  }
+  },
+  "author": "ronffy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ronffy/react-context-hooks-router.git"
+  },
+  "keywords": [
+    "react",
+    "router",
+    "react-hooks"
+  ]
 }
