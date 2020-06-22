@@ -2,21 +2,18 @@
  * @description 
  * @author ronffy
  * @Date 2020-06-18 14:22:22
- * @LastEditTime 2020-06-18 19:18:13
+ * @LastEditTime 2020-06-19 15:01:24
  * @LastEditors ronffy
  */
-import {
-  Switch,
-  Route,
-} from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import React, { useMemo, useReducer, Suspense } from 'react';
 import { Provider } from 'AppContext';
 import ErrorBoundary from './components/ErrorBoundary';
 import reducer, { AppReducer } from './reducer';
 import useRouting from './hooks/useRouting';
 import App from './App';
-import Error from 'routes/Error';
 import getRoutes from './getRoutes'
+import Error from './routes/Error';
 
 const routes = getRoutes();
 

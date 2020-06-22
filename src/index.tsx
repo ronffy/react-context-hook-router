@@ -2,7 +2,7 @@
  * @description 
  * @author ronffy
  * @Date 2020-06-04 17:53:23
- * @LastEditTime 2020-06-18 17:35:36
+ * @LastEditTime 2020-06-18 19:46:47
  * @LastEditors ronffy
  */
 import React from 'react';
@@ -19,8 +19,7 @@ storage.register(prefix);
 ReactDOM.render(
   <BrowserRouter>
     <Routers />
-  </BrowserRouter>
-  ,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
